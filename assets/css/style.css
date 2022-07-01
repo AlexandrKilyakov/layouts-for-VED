@@ -1,0 +1,213 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, html, input, textarea {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+}
+
+body {
+    background-color: #16171b;
+    max-width: 100vw;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #16171b;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #01b075;
+}
+
+::placeholder {
+  color: #999a9e;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul, li, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+svg {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+input, textarea {
+    border: 1px solid #9d9ea2;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 8px 16px;
+    background-color: #6e6f73;
+}
+
+input:focus-visible, textarea:focus-visible {
+    outline-style: none;
+}
+
+textarea {
+    resize: none;
+}
+
+section {
+    padding: 64px 0;
+}
+
+h1, h2, h3, .fake-h1, .fake-h2, .fake-h3 {
+    font-family: 'Roboto';
+    line-height: 120%;
+}
+
+h1, .fake-h1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+h2, .fake-h2, h3, .fake-h3, h4, .fake-h4 {
+    font-weight: 500;
+}
+
+h2, .fake-h2 {
+    font-size: 32px;
+}
+
+h3, .fake-h3 {
+    font-size: 24px;
+}
+
+h4, .fake-h4 {
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1294px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.std-editor {
+    width: fit-content;
+    padding: 32px;
+    background-color: #202125;
+    border-radius: 16px;
+}
+
+.ep-editor {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+.ep-elementCart {
+    background-color: #494a4e;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.ep-elementCart:last-child {
+    margin-right: 0;
+}
+
+.ep-elementCart textarea {
+    width: 100%;
+    height: 365px;
+    margin-bottom: 20px;
+}
+
+.code textarea {
+    white-space: nowrap;
+}
+
+.std-btn {
+    border-radius: 4px;
+    background-color: #6e6f73;
+    border: 1px #6e6f73 solid;
+    padding: 10px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .1s background-color linear;
+    margin-bottom: 10px;
+}
+
+.std-btn:last-child {
+    margin-bottom: 0;
+}
+
+.btn-send, .btn-copy {
+    background-color: #01b075;
+    border-color: #01b075;
+}
+
+.btn-clear {
+    background-color: #ff4934;
+    border-color: #ff4934;
+}
+
+.btn-clear:hover {
+    background-color: #e93823;
+}
+
+.btn-send:hover, .btn-copy:hover {
+    background-color: #027e54;
+}
+
+.ep-h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.alert {
+    width: 800px;
+    text-align: center;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 4px;
+    position: fixed;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s opacity linear;
+    opacity: 0;
+    min-height: 36px;
+}
+
+.alert-copy-done {
+    opacity: 1;
+    background-color: #01b075;
+}
+
+.alert-copy-done:after {
+    content: 'Текст скопирован';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
